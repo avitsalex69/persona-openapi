@@ -15,7 +15,7 @@
   },
   "servers": [
     {
-      "url": "https://withpersona.com/api/v1"
+      "url": "https://api.withpersona.com/api/v1"
     }
   ],
   "security": [
@@ -178,6 +178,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "in": "query",
@@ -390,6 +393,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -669,6 +675,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "account-id",
             "in": "path",
             "required": true,
@@ -809,6 +818,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "account-id",
             "in": "path",
             "required": true,
@@ -884,6 +896,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "account-id",
@@ -1143,6 +1158,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "account-id",
             "in": "path",
             "required": true,
@@ -1252,6 +1270,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "Destination Account ID",
@@ -1365,6 +1386,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "account-id",
             "in": "path",
             "required": true,
@@ -1474,6 +1498,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "account-id",
@@ -1593,6 +1620,9 @@
             "$ref": "#/components/parameters/pagination-query-params"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "in": "query",
             "name": "filter",
             "style": "deepObject",
@@ -1693,6 +1723,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -1771,6 +1804,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "API key's ID (starts with \"api_\")",
             "in": "path",
             "name": "api-key-id",
@@ -1843,6 +1879,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "API key's ID (starts with \"api_\")",
@@ -1931,6 +1970,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "API key's ID (starts with \"api_\")",
@@ -2041,6 +2083,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "responses": {
@@ -2141,6 +2186,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "api-log-id",
             "in": "path",
             "required": true,
@@ -2217,6 +2265,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "in": "query",
@@ -2438,6 +2489,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -2587,6 +2641,7 @@
                             "reference-id": null,
                             "note": null,
                             "behaviors": {
+                              "bot-score": null,
                               "request-spoof-attempts": null,
                               "user-agent-spoof-attempts": null,
                               "distraction-events": null,
@@ -2598,6 +2653,7 @@
                               "autofill-cancels": null,
                               "autofill-starts": null,
                               "devtools-open": null,
+                              "debugger-attached": null,
                               "completion-time": null,
                               "hesitation-percentage": null,
                               "behavior-threat-level": null
@@ -2607,6 +2663,7 @@
                             "reviewer-comment": null,
                             "created-at": "2023-03-29T19:06:45.000Z",
                             "started-at": "2023-03-30T19:07:01.000Z",
+                            "expires-at": null,
                             "completed-at": null,
                             "failed-at": null,
                             "marked-for-review-at": null,
@@ -2794,6 +2851,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "case-id",
             "in": "path",
             "required": true,
@@ -2902,6 +2962,7 @@
                             "reference-id": null,
                             "note": null,
                             "behaviors": {
+                              "bot-score": null,
                               "request-spoof-attempts": null,
                               "user-agent-spoof-attempts": null,
                               "distraction-events": null,
@@ -2913,6 +2974,7 @@
                               "autofill-cancels": null,
                               "autofill-starts": null,
                               "devtools-open": null,
+                              "debugger-attached": null,
                               "completion-time": null,
                               "hesitation-percentage": null,
                               "behavior-threat-level": null
@@ -2922,6 +2984,7 @@
                             "reviewer-comment": null,
                             "created-at": "2023-03-29T19:06:45.000Z",
                             "started-at": "2023-03-30T19:07:01.000Z",
+                            "expires-at": null,
                             "completed-at": null,
                             "failed-at": null,
                             "marked-for-review-at": null,
@@ -3119,6 +3182,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "case-id",
             "in": "path",
             "required": true,
@@ -3231,6 +3297,7 @@
                             "reviewer-comment": null,
                             "created-at": "2021-03-24T04:59:06.000Z",
                             "started-at": null,
+                            "expires-at": "2021-03-25T04:59:06.000Z",
                             "completed-at": null,
                             "failed-at": null,
                             "decisioned-at": null,
@@ -3334,6 +3401,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of the case to update",
@@ -3568,6 +3638,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of the case to update",
             "in": "path",
             "name": "case-id",
@@ -3752,6 +3825,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of the case to update",
             "in": "path",
             "name": "case-id",
@@ -3934,6 +4010,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of the case to update status",
@@ -4126,6 +4205,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of the case to update.",
             "in": "path",
             "name": "case-id",
@@ -4309,6 +4391,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of the case to update.",
             "in": "path",
             "name": "case-id",
@@ -4488,6 +4573,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of the case to update.",
@@ -4791,6 +4879,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "Device ID",
             "in": "path",
             "name": "device-id",
@@ -4868,6 +4959,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -5024,6 +5118,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "responses": {
@@ -5100,6 +5197,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -5233,6 +5333,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "responses": {
@@ -5309,6 +5412,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -5503,6 +5609,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "responses": {
@@ -5579,6 +5688,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -5765,6 +5877,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "responses": {
@@ -5838,6 +5953,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "document-id",
@@ -5916,6 +6034,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "in": "query",
@@ -6073,6 +6194,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "event-id",
             "in": "path",
             "required": true,
@@ -6165,6 +6289,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "responses": {
@@ -6189,7 +6316,7 @@
                           }
                         },
                         {
-                          "type": "importer/list-item/face",
+                          "type": "importer/list-item/name",
                           "id": "mprt_N6PqYkfSqeqiQYWoeHA3GGDo",
                           "attributes": {
                             "status": "ready",
@@ -6294,6 +6421,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "String ID of the importer to fetch",
             "in": "path",
             "name": "importer-id",
@@ -6385,6 +6515,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -6549,6 +6682,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -6635,6 +6771,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -6721,6 +6860,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -6807,6 +6949,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -6893,6 +7038,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -6979,6 +7127,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -7065,6 +7216,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "in": "query",
@@ -7297,6 +7451,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -7541,6 +7698,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -7602,6 +7760,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "inquiry-id",
             "in": "path",
             "required": true,
@@ -7626,6 +7787,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -7685,6 +7847,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "inquiry-id",
             "in": "path",
             "required": true,
@@ -7709,6 +7874,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Included by default:\n\n- Reports\n- Verifications\n- Inquiry Sessions\n- Documents\n- Inquiry Template\n\nAnything else must be explicitly requested with the `include` query parameter.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -7760,6 +7926,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "inquiry-id",
@@ -7838,6 +8007,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -7899,6 +8069,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "inquiry-id",
             "in": "path",
             "required": true,
@@ -7926,6 +8099,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -7967,7 +8141,7 @@
     },
     "/inquiries/{inquiry-id}/approve": {
       "post": {
-        "description": "Approves an <<glossary:Inquiry>>.\n\nNote that this action will trigger any associated workflows and webhooks.",
+        "description": "Approves an <<glossary:Inquiry>>.\n\nNote that this action will trigger any associated workflows and webhooks.\n\nApproving an inquiry will prevent further progress on the inquiry.",
         "operationId": "approve-an-inquiry",
         "externalDocs": {
           "description": "Full documentation for this API on the Persona website.",
@@ -7985,6 +8159,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "inquiry-id",
@@ -8014,6 +8191,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -8055,7 +8233,7 @@
     },
     "/inquiries/{inquiry-id}/decline": {
       "post": {
-        "description": "Declines an <<glossary:Inquiry>>.\nNote that this action will trigger any associated workflows and webhooks.",
+        "description": "Declines an <<glossary:Inquiry>>.\n\nNote that this action will trigger any associated workflows and webhooks.\n\nDeclining an inquiry will prevent further progress on the inquiry.",
         "operationId": "decline-an-inquiry",
         "externalDocs": {
           "description": "Full documentation for this API on the Persona website.",
@@ -8073,6 +8251,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "inquiry-id",
@@ -8102,6 +8283,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -8141,13 +8323,13 @@
         ]
       }
     },
-    "/inquiries/{inquiry-id}/expire": {
+    "/inquiries/{inquiry-id}/mark-for-review": {
       "post": {
-        "description": "Expires an Inquiry and all sessions on the Inquiry. Cancels any pending Verifications on the inquiry.\n\nThe Inquiry can still be resumed after expiry.",
-        "operationId": "expire-an-inquiry",
+        "description": "Marks an <<glossary:Inquiry>> for manual review. Inquiries that are already\napproved or declined cannot be marked for review.\n\nNote that this action will trigger any associated workflows and webhooks.\n\nMarking an inquiry for review will prevent further progress on the inquiry.",
+        "operationId": "mark-an-inquiry-for-review",
         "externalDocs": {
           "description": "Full documentation for this API on the Persona website.",
-          "url": "https://docs.withpersona.com/reference/expire-an-inquiry"
+          "url": "https://docs.withpersona.com/reference/mark-an-inquiry-for-review"
         },
         "parameters": [
           {
@@ -8161,6 +8343,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "inquiry-id",
@@ -8187,6 +8372,96 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
+                      "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
+                      "$ref": "#/components/schemas/inquiry-included-objects"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false
+                }
+              }
+            },
+            "description": "OK"
+          },
+          "400": {
+            "$ref": "#/components/responses/bad-request"
+          },
+          "401": {
+            "$ref": "#/components/responses/unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/not-found"
+          },
+          "409": {
+            "$ref": "#/components/responses/conflict"
+          },
+          "422": {
+            "$ref": "#/components/responses/unprocessable-entity"
+          },
+          "429": {
+            "$ref": "#/components/responses/too-many-requests"
+          }
+        },
+        "summary": "Mark an Inquiry for manual review",
+        "tags": [
+          "Inquiries"
+        ]
+      }
+    },
+    "/inquiries/{inquiry-id}/expire": {
+      "post": {
+        "description": "Expires an Inquiry and all sessions on the Inquiry. Cancels any pending Verifications on the inquiry.\n\nThe Inquiry can still be resumed after expiry.",
+        "operationId": "expire-an-inquiry",
+        "externalDocs": {
+          "description": "Full documentation for this API on the Persona website.",
+          "url": "https://docs.withpersona.com/reference/expire-an-inquiry"
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/key-inflection-header"
+          },
+          {
+            "$ref": "#/components/parameters/idempotency-key-header"
+          },
+          {
+            "$ref": "#/components/parameters/persona-version-header"
+          },
+          {
+            "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
+            "name": "inquiry-id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Result": {
+                    "summary": "OK",
+                    "$ref": "#/components/examples/inquiry"
+                  }
+                },
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/inquiry"
+                    },
+                    "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -8248,6 +8523,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "Inquiry ID (starts with \"inq_\")",
             "in": "path",
             "name": "inquiry-id",
@@ -8299,6 +8577,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     },
@@ -8442,6 +8721,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "inquiry-id",
             "in": "path",
             "required": true,
@@ -8469,6 +8751,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -8530,6 +8813,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "inquiry-id",
             "in": "path",
             "required": true,
@@ -8554,6 +8840,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     },
@@ -8627,6 +8914,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "inquiry-id",
             "in": "path",
             "required": true,
@@ -8690,6 +8980,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -8749,6 +9040,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "inquiry-id",
@@ -8837,6 +9131,7 @@
                       "$ref": "#/components/schemas/inquiry"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/inquiry-included-objects"
                     }
@@ -9055,6 +9350,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -9163,6 +9461,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -9318,6 +9619,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "Inquiry session ID",
             "in": "path",
             "name": "inquiry-session-id",
@@ -9396,6 +9700,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "inquiry-session-id",
@@ -9481,6 +9788,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "inquiry-session-id",
@@ -9629,6 +9939,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -9736,6 +10049,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to retrieve.",
             "in": "path",
             "name": "list-item-id",
@@ -9814,6 +10130,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -9896,6 +10215,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -10003,6 +10325,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -10081,6 +10406,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -10163,6 +10491,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -10270,6 +10601,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to retrieve.",
             "in": "path",
             "name": "list-item-id",
@@ -10348,6 +10682,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -10430,6 +10767,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -10541,6 +10881,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -10619,6 +10962,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -10701,6 +11047,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -10808,6 +11157,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -10886,6 +11238,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -10968,6 +11323,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -11086,6 +11444,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -11164,6 +11525,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -11246,6 +11610,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -11357,6 +11724,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -11435,6 +11805,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -11517,6 +11890,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -11624,6 +12000,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -11702,6 +12081,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -11784,6 +12166,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -11895,6 +12280,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -11973,6 +12361,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -12055,6 +12446,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -12162,6 +12556,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -12240,6 +12637,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -12322,6 +12722,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -12429,6 +12832,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of list item to archive.",
             "in": "path",
             "name": "list-item-id",
@@ -12507,6 +12913,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of list item to archive.",
@@ -12593,6 +13002,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -12720,6 +13132,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -12847,6 +13262,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -12974,6 +13392,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -13101,6 +13522,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -13228,6 +13652,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -13355,6 +13782,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -13487,6 +13917,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -13614,6 +14047,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "in": "query",
@@ -13749,6 +14185,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of the list to archive",
             "in": "path",
             "name": "list-id",
@@ -13844,6 +14283,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of the list to retrieve",
@@ -14175,6 +14617,9 @@
             "$ref": "#/components/parameters/pagination-query-params"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "in": "query",
             "name": "filter",
             "style": "deepObject",
@@ -14323,6 +14768,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -14445,6 +14893,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -14507,6 +14956,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "report-id",
             "in": "path",
             "required": true,
@@ -14533,6 +14985,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -14590,6 +15043,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "report-id",
             "in": "path",
             "required": true,
@@ -14614,6 +15070,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Included by default:\n\n- Report Template\n\nAnything else must be explicitly requested with the `include` query parameter.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -14667,6 +15124,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "report-id",
@@ -14749,6 +15209,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -14806,6 +15267,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "report-id",
@@ -14905,6 +15369,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -14964,6 +15429,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "report-id",
             "in": "path",
             "required": true,
@@ -15018,6 +15486,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -15141,6 +15610,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "report-id",
             "in": "path",
             "required": true,
@@ -15221,6 +15693,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -15280,6 +15753,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "report-id",
             "in": "path",
             "required": true,
@@ -15334,6 +15810,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -15393,6 +15870,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "report-id",
             "in": "path",
             "required": true,
@@ -15447,6 +15927,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -15504,6 +15985,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "report-id",
@@ -15592,6 +16076,7 @@
                       "$ref": "#/components/schemas/report"
                     },
                     "included": {
+                      "x-remove-from-readme": true,
                       "description": "Objects that _may_ be returned if specified via the `include` query parameter in the request.",
                       "$ref": "#/components/schemas/reports-included-objects"
                     }
@@ -15653,6 +16138,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -15804,6 +16292,9 @@
             "$ref": "#/components/parameters/pagination-query-params"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "in": "query",
             "name": "filter",
             "style": "deepObject",
@@ -15928,6 +16419,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "transaction-id",
@@ -16058,6 +16552,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "transaction-id",
             "in": "path",
             "description": "ID of the transaction to retrieve.",
@@ -16152,6 +16649,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "transaction-id",
@@ -16293,6 +16793,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "transaction-id",
             "in": "path",
             "description": "ID of the transaction to add tag on.",
@@ -16408,6 +16911,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "transaction-id",
@@ -16526,6 +17032,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "transaction-id",
             "in": "path",
             "description": "ID of the transaction to remove tag from.",
@@ -16641,6 +17150,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "transaction-id",
@@ -16770,6 +17282,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "transaction-id",
             "in": "path",
             "required": true,
@@ -16894,6 +17409,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "responses": {
@@ -17062,6 +17580,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "user-audit-log-id",
             "in": "path",
             "required": true,
@@ -17166,6 +17687,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of Verification to retrieve",
             "in": "path",
             "name": "verification-id",
@@ -17240,6 +17764,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of Verification to retrieve",
@@ -17318,6 +17845,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of Verification to retrieve",
             "in": "path",
             "name": "verification-id",
@@ -17392,6 +17922,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of Verification to retrieve",
@@ -17470,6 +18003,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of Verification to retrieve",
             "in": "path",
             "name": "verification-id",
@@ -17544,6 +18080,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of Verification to retrieve",
@@ -17622,6 +18161,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of Verification to retrieve",
             "in": "path",
             "name": "verification-id",
@@ -17698,6 +18240,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "verification-id",
             "in": "path",
             "required": true,
@@ -17771,6 +18316,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "ID of Verification to retrieve",
@@ -17849,6 +18397,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "name": "verification-id",
             "in": "path",
             "required": true,
@@ -17922,6 +18473,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "verification-id",
@@ -18046,6 +18600,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "ID of Verification to retrieve",
             "in": "path",
             "name": "verification-id",
@@ -18120,6 +18677,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "verification-id",
@@ -18330,6 +18890,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "verification-id",
@@ -18584,6 +19147,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "responses": {
@@ -18729,6 +19295,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           }
         ],
         "requestBody": {
@@ -18835,6 +19404,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "Webhook's ID (starts with \"wbh_\")",
             "in": "path",
             "name": "webhook-id",
@@ -18910,6 +19482,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "Webhook's ID (starts with \"wbh_\")",
@@ -19018,6 +19593,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "Webhook's ID (starts with \"wbh_\")",
             "in": "path",
             "name": "webhook-id",
@@ -19101,6 +19679,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "Webhook's ID (starts with \"wbh_\")",
@@ -19188,6 +19769,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "Webhook's ID (starts with \"wbh_\")",
             "in": "path",
             "name": "webhook-id",
@@ -19271,6 +19855,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "description": "Webhook's ID (starts with \"wbh_\")",
@@ -19379,6 +19966,9 @@
           },
           {
             "$ref": "#/components/parameters/include-query-parameter"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "name": "workflow-id",
@@ -19537,6 +20127,9 @@
             "$ref": "#/components/parameters/include-query-parameter"
           },
           {
+            "$ref": "#/components/parameters/fields-query-parameter"
+          },
+          {
             "description": "Workflow Run's ID (starts with \"wfr_\")",
             "in": "path",
             "name": "workflow-run-id",
@@ -19642,6 +20235,9 @@
           },
           {
             "$ref": "#/components/parameters/pagination-query-params"
+          },
+          {
+            "$ref": "#/components/parameters/fields-query-parameter"
           },
           {
             "in": "query",
@@ -20482,6 +21078,7 @@
                                         "$ref": "#/components/schemas/inquiry"
                                       },
                                       "included": {
+                                        "x-remove-from-readme": true,
                                         "description": "All objects that are present in `data.attributes.relationships` will be provided in `included`.",
                                         "$ref": "#/components/schemas/inquiry-included-objects"
                                       }
@@ -20573,6 +21170,7 @@
                                         "$ref": "#/components/schemas/inquiry"
                                       },
                                       "included": {
+                                        "x-remove-from-readme": true,
                                         "description": "All objects that are present in `data.attributes.relationships` will be provided in `included`.",
                                         "$ref": "#/components/schemas/inquiry-included-objects"
                                       }
@@ -20664,6 +21262,7 @@
                                         "$ref": "#/components/schemas/inquiry"
                                       },
                                       "included": {
+                                        "x-remove-from-readme": true,
                                         "description": "All objects that are present in `data.attributes.relationships` will be provided in `included`.",
                                         "$ref": "#/components/schemas/inquiry-included-objects"
                                       }
@@ -20755,6 +21354,7 @@
                                         "$ref": "#/components/schemas/inquiry"
                                       },
                                       "included": {
+                                        "x-remove-from-readme": true,
                                         "description": "All objects that are present in `data.attributes.relationships` will be provided in `included`.",
                                         "$ref": "#/components/schemas/inquiry-included-objects"
                                       }
@@ -20846,6 +21446,7 @@
                                         "$ref": "#/components/schemas/inquiry"
                                       },
                                       "included": {
+                                        "x-remove-from-readme": true,
                                         "description": "All objects that are present in `data.attributes.relationships` will be provided in `included`.",
                                         "$ref": "#/components/schemas/inquiry-included-objects"
                                       }
@@ -20937,6 +21538,7 @@
                                         "$ref": "#/components/schemas/inquiry"
                                       },
                                       "included": {
+                                        "x-remove-from-readme": true,
                                         "description": "All objects that are present in `data.attributes.relationships` will be provided in `included`.",
                                         "$ref": "#/components/schemas/inquiry-included-objects"
                                       }
@@ -21028,6 +21630,7 @@
                                         "$ref": "#/components/schemas/inquiry"
                                       },
                                       "included": {
+                                        "x-remove-from-readme": true,
                                         "description": "All objects that are present in `data.attributes.relationships` will be provided in `included`.",
                                         "$ref": "#/components/schemas/inquiry-included-objects"
                                       }
@@ -21119,6 +21722,7 @@
                                         "$ref": "#/components/schemas/inquiry"
                                       },
                                       "included": {
+                                        "x-remove-from-readme": true,
                                         "description": "All objects that are present in `data.attributes.relationships` will be provided in `included`.",
                                         "$ref": "#/components/schemas/inquiry-included-objects"
                                       }
@@ -21224,6 +21828,14 @@
               "type": "number"
             }
           }
+        }
+      },
+      "fields-query-parameter": {
+        "in": "query",
+        "name": "fields",
+        "description": "A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.",
+        "schema": {
+          "type": "string"
         }
       },
       "include-query-parameter": {
@@ -23144,6 +23756,7 @@
                         ]
                       },
                       "autofill-starts": {
+                        "description": "Number of times the user autofilled a form field.",
                         "default": 0,
                         "examples": [
                           0
@@ -23154,6 +23767,7 @@
                         ]
                       },
                       "behavior-threat-level": {
+                        "description": "A predictive, proprietary score you can use to assess fraud risk. This score is created by Persona and based on a combination of behavioral signals.",
                         "examples": [
                           "low"
                         ],
@@ -23162,7 +23776,21 @@
                           "null"
                         ]
                       },
+                      "bot-score": {
+                        "description": "A score between 0 and 100 that indicates the likelihood that the user is a bot.",
+                        "default": 0,
+                        "examples": [
+                          1,
+                          70,
+                          99
+                        ],
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
                       "completion-time": {
+                        "description": "Time duration of user interaction.",
                         "default": 0,
                         "examples": [
                           28.62633237
@@ -23182,7 +23810,19 @@
                           "null"
                         ]
                       },
+                      "debugger-attached": {
+                        "description": "A debugger was detected within a mobile integration flow.",
+                        "default": false,
+                        "examples": [
+                          false
+                        ],
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
                       "distraction-events": {
+                        "description": "Number of times the user switched focus from the flow for browser-based integrations.",
                         "default": 0,
                         "examples": [
                           0
@@ -23203,6 +23843,7 @@
                         ]
                       },
                       "hesitation-count": {
+                        "description": "Number of periods where the user made no inputs.",
                         "default": 0,
                         "examples": [
                           1
@@ -23213,6 +23854,7 @@
                         ]
                       },
                       "hesitation-percentage": {
+                        "description": "Percentage of time in the flow where the user made no inputs.",
                         "default": 0,
                         "examples": [
                           65.33232628398792
@@ -23223,6 +23865,7 @@
                         ]
                       },
                       "hesitation-time": {
+                        "description": "Total time where the user made no inputs.",
                         "default": 0,
                         "examples": [
                           12975
@@ -23233,6 +23876,7 @@
                         ]
                       },
                       "request-spoof-attempts": {
+                        "description": "Number of requests that were likely spoofed.",
                         "default": 0,
                         "examples": [
                           0
@@ -23243,6 +23887,7 @@
                         ]
                       },
                       "shortcut-copies": {
+                        "description": "Number of times the user used a keyboard shortcut to copy information.",
                         "default": 0,
                         "examples": [
                           0
@@ -23253,6 +23898,7 @@
                         ]
                       },
                       "shortcut-pastes": {
+                        "description": "Number of times the user used a keyboard shortcut to paste information.",
                         "default": 0,
                         "examples": [
                           0
@@ -23263,6 +23909,7 @@
                         ]
                       },
                       "user-agent-spoof-attempts": {
+                        "description": "Number of user agent headers that were likely spoofed on seen devices",
                         "default": 0,
                         "examples": [
                           0
@@ -23315,6 +23962,16 @@
                     "format": "date-time"
                   },
                   "started-at": {
+                    "examples": [
+                      "2023-03-28T18:35:10.000Z"
+                    ],
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date-time"
+                  },
+                  "expires-at": {
                     "examples": [
                       "2023-03-28T18:35:10.000Z"
                     ],
@@ -23936,7 +24593,8 @@
                           "workflow",
                           "workflow-run"
                         ],
-                        "type": "string"
+                        "type": "string",
+                        "description": "Will be either `user`, `workflow`, or `workflow-run`."
                       }
                     },
                     "type": [
@@ -24958,6 +25616,295 @@
                     }
                   }
                 }
+              }
+            ]
+          },
+          "relationships": {
+            "$ref": "#/components/schemas/report-shared-relationships"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes"
+        ]
+      },
+      "report-business-associated-persons": {
+        "title": "Business Associated Persons Report",
+        "description": "A report containing information about the Associated Persons of a business entity",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "report/business-associated-persons",
+            "description": "The type identifier for a Business Associated Persons Report."
+          },
+          "id": {
+            "type": "string",
+            "description": "A unique identifier for the report.",
+            "examples": [
+              "rep_9XxZsPaNcroBKmJNHBlYDLOp"
+            ]
+          },
+          "attributes": {
+            "type": "object",
+            "unevaluatedProperties": false,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/report-shared-attributes"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "address-country-code": {
+                        "type": "string",
+                        "description": "The country code used for the search"
+                      }
+                    },
+                    "required": [
+                      "address-country-code"
+                    ]
+                  },
+                  "associated-persons": {
+                    "type": "array",
+                    "description": "List of persons associated with the business",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "names": {
+                          "type": "array",
+                          "description": "Names associated with the person",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "value": {
+                                "type": "string",
+                                "description": "The person's name"
+                              }
+                            },
+                            "required": [
+                              "value"
+                            ]
+                          }
+                        },
+                        "positions": {
+                          "type": "array",
+                          "description": "Positions held by the person",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "value": {
+                                "type": "string",
+                                "description": "The position title"
+                              }
+                            },
+                            "required": [
+                              "value"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "names",
+                        "positions"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "query",
+                  "associated-persons"
+                ]
+              }
+            ]
+          },
+          "relationships": {
+            "$ref": "#/components/schemas/report-shared-relationships"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes"
+        ]
+      },
+      "report-business-registrations-lookup": {
+        "title": "Business Registrations Lookup Report",
+        "description": "A report containing business registration information from official sources",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "report/business-registrations-lookup",
+            "description": "The type identifier for a Business Registrations Lookup Report."
+          },
+          "id": {
+            "type": "string",
+            "description": "A unique identifier for the report.",
+            "examples": [
+              "rep_9XxZsPaNcroBKmJNHBlYDLOp"
+            ]
+          },
+          "attributes": {
+            "type": "object",
+            "unevaluatedProperties": false,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/report-shared-attributes"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "query": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "address-country-code": {
+                        "type": "string",
+                        "description": "The country code used for the search"
+                      }
+                    },
+                    "required": [
+                      "address-country-code"
+                    ]
+                  },
+                  "result": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "business-name": {
+                        "type": "string",
+                        "description": "The name of the business"
+                      },
+                      "legal-entity-type": {
+                        "type": "string",
+                        "description": "The type of legal entity"
+                      },
+                      "formation-country": {
+                        "type": "string",
+                        "description": "The country where the business was formed"
+                      },
+                      "formation-subdivision": {
+                        "type": "string",
+                        "description": "The subdivision where the business was formed"
+                      },
+                      "formation-date": {
+                        "type": "string",
+                        "description": "The date the business was formed",
+                        "format": "date"
+                      },
+                      "registry-records": {
+                        "type": "array",
+                        "description": "List of business registration records",
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "description": "The type of registry record",
+                              "example": "us_secretary_of_state"
+                            },
+                            "issue-date": {
+                              "type": "string",
+                              "format": "date",
+                              "description": "Date the registration was issued"
+                            },
+                            "issuing-authority": {
+                              "type": "string",
+                              "description": "Authority that issued the registration"
+                            },
+                            "file-number": {
+                              "type": "string",
+                              "description": "Official registration number"
+                            },
+                            "registered-name": {
+                              "type": "string",
+                              "description": "Official registered business name"
+                            },
+                            "registration-type": {
+                              "type": "string",
+                              "description": "Type of registration (e.g. domestic, foreign)"
+                            },
+                            "status": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "raw": {
+                                  "type": "string",
+                                  "description": "Status on the registry record"
+                                },
+                                "standardized": {
+                                  "type": "string",
+                                  "description": "Normalized status value"
+                                }
+                              }
+                            },
+                            "registration-state": {
+                              "type": "string",
+                              "description": "State/subdivision where business is registered"
+                            },
+                            "legal-entity-type": {
+                              "type": "string",
+                              "description": "Type of legal entity"
+                            },
+                            "addresses": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "description": "Type of address"
+                                  },
+                                  "street-1": {
+                                    "type": "string",
+                                    "description": "Street address"
+                                  },
+                                  "street-2": {
+                                    "type": "string",
+                                    "description": "Street address"
+                                  },
+                                  "city": {
+                                    "type": "string",
+                                    "description": "City"
+                                  },
+                                  "subdivision": {
+                                    "type": "string",
+                                    "description": "State/province/region"
+                                  },
+                                  "postal-code": {
+                                    "type": "string",
+                                    "description": "Postal code"
+                                  },
+                                  "country-code": {
+                                    "type": "string",
+                                    "description": "Country code"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "query",
+                  "result"
+                ]
               }
             ]
           },
@@ -29494,6 +30441,13 @@
                       "string",
                       "null"
                     ]
+                  },
+                  "from-reusable-persona": {
+                    "examples": [
+                      true,
+                      false
+                    ],
+                    "type": "boolean"
                   }
                 }
               },
@@ -29903,6 +30857,13 @@
                     ],
                     "example": "https://files.withpersona.com/..."
                   },
+                  "from-reusable-persona": {
+                    "examples": [
+                      true,
+                      false
+                    ],
+                    "type": "boolean"
+                  },
                   "photo-urls": {
                     "items": {
                       "properties": {
@@ -29974,6 +30935,8 @@
               "report/address-lookup": "#/components/schemas/report-address-lookup",
               "report/adverse-media": "#/components/schemas/report-adverse-media",
               "report/business-adverse-media": "#/components/schemas/report-business-adverse-media",
+              "report/business-associated-persons": "#/components/schemas/report-business-associated-persons",
+              "report/business-registrations-lookup": "#/components/schemas/report-business-registrations-lookup",
               "report/business-lookup": "#/components/schemas/report-business-lookup",
               "report/business-watchlist": "#/components/schemas/report-business-watchlist",
               "report/crypto-address-watchlist": "#/components/schemas/report-crypto-address-watchlist",
@@ -30028,7 +30991,13 @@
               "$ref": "#/components/schemas/report-business-adverse-media"
             },
             {
+              "$ref": "#/components/schemas/report-business-associated-persons"
+            },
+            {
               "$ref": "#/components/schemas/report-business-lookup"
+            },
+            {
+              "$ref": "#/components/schemas/report-business-registrations-lookup"
             },
             {
               "$ref": "#/components/schemas/report-business-watchlist"
@@ -31908,6 +32877,48 @@
           }
         ]
       },
+      "user": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "A User object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "user",
+            "description": "user"
+          },
+          "id": {
+            "type": "string",
+            "examples": [
+              "user_ABC123"
+            ]
+          },
+          "attributes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "email-address": {
+                "type": "string",
+                "examples": [
+                  "jane@doe.com"
+                ]
+              },
+              "name-first": {
+                "type": "string",
+                "examples": [
+                  "Jane"
+                ]
+              },
+              "name-last": {
+                "type": "string",
+                "examples": [
+                  "Doe"
+                ]
+              }
+            }
+          }
+        }
+      },
       "selfie": {
         "type": "object",
         "additionalProperties": false,
@@ -32257,6 +33268,19 @@
                 "examples": [
                   "precise"
                 ]
+              },
+              "ip-connection-type": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "examples": [
+                  "mobile",
+                  "datacenter",
+                  "residential",
+                  "corporate",
+                  "education"
+                ]
               }
             }
           },
@@ -32341,6 +33365,220 @@
           }
         }
       },
+      "workflow": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "A Workflow object",
+        "properties": {
+          "type": {
+            "const": "workflow",
+            "description": "workflow",
+            "type": "string"
+          },
+          "id": {
+            "examples": [
+              "wfl_3JqAR9ddLRVZLK5z4yD8oeHB"
+            ],
+            "type": "string"
+          },
+          "attributes": {
+            "properties": {
+              "status": {
+                "description": "The status of the Workflow\n\nPossible values:\n- paused\n- running\n- archived\n\nDo not assume this is a static enumeration; Persona may add new\nvalues in the future without a versioned update.",
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "created-at": {
+                "examples": [
+                  "2022-08-08T18:55:44.910Z"
+                ],
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      "workflow-run": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "A Workflow Run object",
+        "properties": {
+          "type": {
+            "const": "workflow-run",
+            "description": "workflow-run",
+            "type": "string"
+          },
+          "id": {
+            "examples": [
+              "wfr_3JqAR9ddLRVZLK5z4yD8oeHB"
+            ],
+            "type": "string"
+          },
+          "attributes": {
+            "properties": {
+              "completed-at": {
+                "examples": [
+                  "2022-08-08T18:55:44.910Z"
+                ],
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date-time"
+              },
+              "created-at": {
+                "examples": [
+                  "2022-08-08T18:55:44.910Z"
+                ],
+                "type": "string",
+                "format": "date-time"
+              },
+              "status": {
+                "examples": [
+                  "in_progress"
+                ],
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          },
+          "relationships": {
+            "properties": {
+              "creator": {
+                "properties": {
+                  "data": {
+                    "unevaluatedProperties": false,
+                    "oneOf": [
+                      {
+                        "type": "null"
+                      },
+                      {
+                        "properties": {
+                          "type": {
+                            "const": "administrator",
+                            "description": "administrator",
+                            "type": "string"
+                          },
+                          "id": {
+                            "examples": [
+                              "admn_3VghhbvDc7UuUNT8uZrqZjsk"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "type": "object",
+                        "additionalProperties": false
+                      },
+                      {
+                        "properties": {
+                          "type": {
+                            "const": "user",
+                            "description": "user",
+                            "type": "string"
+                          },
+                          "id": {
+                            "examples": [
+                              "user_3VghhbvDc7UuUNT8uZrqZjsk"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "type": "object",
+                        "additionalProperties": false
+                      },
+                      {
+                        "properties": {
+                          "type": {
+                            "const": "event",
+                            "description": "event",
+                            "type": "string"
+                          },
+                          "id": {
+                            "examples": [
+                              "evt_3VghhbvDc7UuUNT8uZrqZjsk"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "type": "object",
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                },
+                "type": "object",
+                "additionalProperties": false
+              },
+              "workflow": {
+                "properties": {
+                  "data": {
+                    "properties": {
+                      "type": {
+                        "const": "workflow",
+                        "description": "workflow",
+                        "type": "string"
+                      },
+                      "id": {
+                        "examples": [
+                          "wfl_3VghhbvDc7UuUNT8uZrqZjsk"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "type": "object",
+                    "additionalProperties": false
+                  }
+                },
+                "type": "object",
+                "additionalProperties": false
+              },
+              "workflow-version": {
+                "properties": {
+                  "data": {
+                    "properties": {
+                      "type": {
+                        "const": "workflow-version",
+                        "description": "workflow-version",
+                        "type": "string"
+                      },
+                      "id": {
+                        "examples": [
+                          "wfv_DkWeGvK9wojQnubF8ABHzJRQ"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "type": "object",
+                    "additionalProperties": false
+                  }
+                },
+                "type": "object",
+                "additionalProperties": false
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "processing-time-seconds": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      },
       "inquiry-included-objects": {
         "type": "array",
         "items": {
@@ -32353,11 +33591,14 @@
               "document/government-id-nfc": "#/components/schemas/document-government-id-nfc",
               "document/mobile-drivers-license": "#/components/schemas/document-mobile-drivers-license",
               "template": "#/components/schemas/template",
+              "user": "#/components/schemas/user",
               "inquiry-template": "#/components/schemas/inquiry-template",
               "inquiry-template-version": "#/components/schemas/inquiry-template-version",
               "report/address-lookup": "#/components/schemas/report-address-lookup",
               "report/adverse-media": "#/components/schemas/report-adverse-media",
               "report/business-adverse-media": "#/components/schemas/report-business-adverse-media",
+              "report/business-associated-persons": "#/components/schemas/report-business-associated-persons",
+              "report/business-registrations-lookup": "#/components/schemas/report-business-registrations-lookup",
               "report/business-lookup": "#/components/schemas/report-business-lookup",
               "report/business-watchlist": "#/components/schemas/report-business-watchlist",
               "report/crypto-address-watchlist": "#/components/schemas/report-crypto-address-watchlist",
@@ -32387,7 +33628,9 @@
               "verification/government-id": "#/components/schemas/verification-government-id",
               "verification/government-id-nfc": "#/components/schemas/verification-government-id-nfc",
               "verification/phone-number": "#/components/schemas/verification-phone-number",
-              "verification/selfie": "#/components/schemas/verification-selfie"
+              "verification/selfie": "#/components/schemas/verification-selfie",
+              "workflow": "#/components/schemas/workflow",
+              "workflow-run": "#/components/schemas/workflow-run"
             }
           },
           "anyOf": [
@@ -32410,6 +33653,9 @@
               "$ref": "#/components/schemas/template"
             },
             {
+              "$ref": "#/components/schemas/user"
+            },
+            {
               "$ref": "#/components/schemas/inquiry-template"
             },
             {
@@ -32425,7 +33671,13 @@
               "$ref": "#/components/schemas/report-business-adverse-media"
             },
             {
+              "$ref": "#/components/schemas/report-business-associated-persons"
+            },
+            {
               "$ref": "#/components/schemas/report-business-lookup"
+            },
+            {
+              "$ref": "#/components/schemas/report-business-registrations-lookup"
             },
             {
               "$ref": "#/components/schemas/report-business-watchlist"
@@ -32507,6 +33759,12 @@
             },
             {
               "$ref": "#/components/schemas/verification-selfie"
+            },
+            {
+              "$ref": "#/components/schemas/workflow"
+            },
+            {
+              "$ref": "#/components/schemas/workflow-run"
             }
           ]
         }
@@ -34539,6 +35797,8 @@
             "report/address-lookup": "#/components/schemas/report-address-lookup",
             "report/adverse-media": "#/components/schemas/report-adverse-media",
             "report/business-adverse-media": "#/components/schemas/report-business-adverse-media",
+            "report/business-associated-persons": "#/components/schemas/report-business-associated-persons",
+            "report/business-registrations-lookup": "#/components/schemas/report-business-registrations-lookup",
             "report/business-lookup": "#/components/schemas/report-business-lookup",
             "report/business-watchlist": "#/components/schemas/report-business-watchlist",
             "report/crypto-address-watchlist": "#/components/schemas/report-crypto-address-watchlist",
@@ -34562,6 +35822,12 @@
           },
           {
             "$ref": "#/components/schemas/report-business-adverse-media"
+          },
+          {
+            "$ref": "#/components/schemas/report-business-associated-persons"
+          },
+          {
+            "$ref": "#/components/schemas/report-business-registrations-lookup"
           },
           {
             "$ref": "#/components/schemas/report-business-lookup"
@@ -34900,10 +36166,7 @@
                       },
                       "address-street-1": {
                         "description": "Address line 1 (e.g., street, PO Box, or company name).",
-                        "type": [
-                          "string",
-                          "null"
-                        ],
+                        "type": "string",
                         "example": "123 Funky St"
                       },
                       "address-street-2": {
@@ -34915,34 +36178,22 @@
                       },
                       "address-city": {
                         "description": "City",
-                        "type": [
-                          "string",
-                          "null"
-                        ],
+                        "type": "string",
                         "example": "Funkyville"
                       },
                       "address-subdivision": {
-                        "type": [
-                          "string",
-                          "null"
-                        ],
+                        "type": "string",
                         "description": "Subnational division of a country, such as a state or province.",
                         "example": "CA"
                       },
                       "address-postal-code": {
                         "description": "ZIP or postal code",
-                        "type": [
-                          "string",
-                          "null"
-                        ],
+                        "type": "string",
                         "example": "12345"
                       },
                       "address-country-code": {
                         "description": "ISO 3166-1 alpha-2 country code.",
-                        "type": [
-                          "string",
-                          "null"
-                        ],
+                        "type": "string",
                         "example": "US"
                       },
                       "associated-people": {
@@ -34992,7 +36243,11 @@
                       }
                     },
                     "required": [
-                      "business-name"
+                      "business-name",
+                      "address-street-1",
+                      "address-city",
+                      "address-subdivision",
+                      "address-postal-code"
                     ]
                   }
                 },
@@ -36499,48 +37754,6 @@
           }
         }
       },
-      "user": {
-        "type": "object",
-        "additionalProperties": false,
-        "description": "A User object",
-        "properties": {
-          "type": {
-            "type": "string",
-            "const": "user",
-            "description": "user"
-          },
-          "id": {
-            "type": "string",
-            "examples": [
-              "user_ABC123"
-            ]
-          },
-          "attributes": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "email-address": {
-                "type": "string",
-                "examples": [
-                  "jane@doe.com"
-                ]
-              },
-              "name-first": {
-                "type": "string",
-                "examples": [
-                  "Jane"
-                ]
-              },
-              "name-last": {
-                "type": "string",
-                "examples": [
-                  "Doe"
-                ]
-              }
-            }
-          }
-        }
-      },
       "verification": {
         "type": "object",
         "discriminator": {
@@ -36809,7 +38022,7 @@
             ]
           },
           "api-attributes-blocklist": {
-            "description": "Attributes blocked from webhook requests. For more info see [Webhook Attributes Blocklists](https://docs.withpersona.com/docs/webhook-attribute-blocklists).",
+            "description": "Attributes blocked from webhook requests. For more info see [Webhook Attributes Blocklist](https://docs.withpersona.com/docs/webhook-blocklists#attribute-blocklist).",
             "items": {
               "type": "string"
             },
@@ -36980,220 +38193,6 @@
                 ]
               }
             }
-          }
-        }
-      },
-      "workflow-run": {
-        "type": "object",
-        "additionalProperties": false,
-        "description": "A Workflow Run object",
-        "properties": {
-          "type": {
-            "const": "workflow-run",
-            "description": "workflow-run",
-            "type": "string"
-          },
-          "id": {
-            "examples": [
-              "wfr_3JqAR9ddLRVZLK5z4yD8oeHB"
-            ],
-            "type": "string"
-          },
-          "attributes": {
-            "properties": {
-              "completed-at": {
-                "examples": [
-                  "2022-08-08T18:55:44.910Z"
-                ],
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "format": "date-time"
-              },
-              "created-at": {
-                "examples": [
-                  "2022-08-08T18:55:44.910Z"
-                ],
-                "type": "string",
-                "format": "date-time"
-              },
-              "status": {
-                "examples": [
-                  "in_progress"
-                ],
-                "type": "string"
-              }
-            },
-            "type": "object",
-            "additionalProperties": false
-          },
-          "relationships": {
-            "properties": {
-              "creator": {
-                "properties": {
-                  "data": {
-                    "unevaluatedProperties": false,
-                    "oneOf": [
-                      {
-                        "type": "null"
-                      },
-                      {
-                        "properties": {
-                          "type": {
-                            "const": "administrator",
-                            "description": "administrator",
-                            "type": "string"
-                          },
-                          "id": {
-                            "examples": [
-                              "admn_3VghhbvDc7UuUNT8uZrqZjsk"
-                            ],
-                            "type": "string"
-                          }
-                        },
-                        "type": "object",
-                        "additionalProperties": false
-                      },
-                      {
-                        "properties": {
-                          "type": {
-                            "const": "user",
-                            "description": "user",
-                            "type": "string"
-                          },
-                          "id": {
-                            "examples": [
-                              "user_3VghhbvDc7UuUNT8uZrqZjsk"
-                            ],
-                            "type": "string"
-                          }
-                        },
-                        "type": "object",
-                        "additionalProperties": false
-                      },
-                      {
-                        "properties": {
-                          "type": {
-                            "const": "event",
-                            "description": "event",
-                            "type": "string"
-                          },
-                          "id": {
-                            "examples": [
-                              "evt_3VghhbvDc7UuUNT8uZrqZjsk"
-                            ],
-                            "type": "string"
-                          }
-                        },
-                        "type": "object",
-                        "additionalProperties": false
-                      }
-                    ]
-                  }
-                },
-                "type": "object",
-                "additionalProperties": false
-              },
-              "workflow": {
-                "properties": {
-                  "data": {
-                    "properties": {
-                      "type": {
-                        "const": "workflow",
-                        "description": "workflow",
-                        "type": "string"
-                      },
-                      "id": {
-                        "examples": [
-                          "wfl_3VghhbvDc7UuUNT8uZrqZjsk"
-                        ],
-                        "type": "string"
-                      }
-                    },
-                    "type": "object",
-                    "additionalProperties": false
-                  }
-                },
-                "type": "object",
-                "additionalProperties": false
-              },
-              "workflow-version": {
-                "properties": {
-                  "data": {
-                    "properties": {
-                      "type": {
-                        "const": "workflow-version",
-                        "description": "workflow-version",
-                        "type": "string"
-                      },
-                      "id": {
-                        "examples": [
-                          "wfv_DkWeGvK9wojQnubF8ABHzJRQ"
-                        ],
-                        "type": "string"
-                      }
-                    },
-                    "type": "object",
-                    "additionalProperties": false
-                  }
-                },
-                "type": "object",
-                "additionalProperties": false
-              }
-            },
-            "type": "object",
-            "additionalProperties": false
-          },
-          "meta": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "processing-time-seconds": {
-                "type": [
-                  "number",
-                  "null"
-                ]
-              }
-            }
-          }
-        }
-      },
-      "workflow": {
-        "type": "object",
-        "additionalProperties": false,
-        "description": "A Workflow object",
-        "properties": {
-          "type": {
-            "const": "workflow",
-            "description": "workflow",
-            "type": "string"
-          },
-          "id": {
-            "examples": [
-              "wfl_3JqAR9ddLRVZLK5z4yD8oeHB"
-            ],
-            "type": "string"
-          },
-          "attributes": {
-            "properties": {
-              "status": {
-                "description": "The status of the Workflow\n\nPossible values:\n- paused\n- running\n- archived\n\nDo not assume this is a static enumeration; Persona may add new\nvalues in the future without a versioned update.",
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "created-at": {
-                "examples": [
-                  "2022-08-08T18:55:44.910Z"
-                ],
-                "type": "string",
-                "format": "date-time"
-              }
-            },
-            "type": "object",
-            "additionalProperties": false
           }
         }
       },
@@ -38354,6 +39353,7 @@
                 "reference-id": "abc-123",
                 "note": null,
                 "behaviors": {
+                  "bot-score": 70,
                   "request-spoof-attempts": 0,
                   "user-agent-spoof-attempts": 0,
                   "distraction-events": 0,
@@ -38365,6 +39365,7 @@
                   "autofill-cancels": 0,
                   "autofill-starts": 0,
                   "devtools-open": false,
+                  "debugger-attached": false,
                   "completion-time": 40.172463903,
                   "hesitation-percentage": 96.88310813087575,
                   "behavior-threat-level": "low"
@@ -38374,6 +39375,7 @@
                 "reviewer-comment": null,
                 "created-at": "2023-03-29T19:06:45.000Z",
                 "started-at": "2023-03-30T19:07:01.000Z",
+                "expires-at": "2023-03-31T19:07:01.000Z",
                 "completed-at": null,
                 "failed-at": null,
                 "marked-for-review-at": null,
@@ -38516,6 +39518,7 @@
               "reference-id": "abc-123",
               "note": null,
               "behaviors": {
+                "bot-score": 70,
                 "request-spoof-attempts": 0,
                 "user-agent-spoof-attempts": 0,
                 "distraction-events": 0,
@@ -38527,6 +39530,7 @@
                 "autofill-cancels": 0,
                 "autofill-starts": 0,
                 "devtools-open": false,
+                "debugger-attached": false,
                 "completion-time": 40.172463903,
                 "hesitation-percentage": 96.88310813087575,
                 "behavior-threat-level": "low"
@@ -38537,6 +39541,7 @@
               "created-at": "2023-03-29T19:06:45.000Z",
               "updated-at": "2023-03-29T20:08:47.000Z",
               "started-at": "2023-03-30T19:07:01.000Z",
+              "expires-at": "2023-03-31T19:07:01.000Z",
               "completed-at": null,
               "failed-at": null,
               "marked-for-review-at": null,
@@ -38677,6 +39682,7 @@
               "reference-id": "abc-123",
               "note": null,
               "behaviors": {
+                "bot-score": 70,
                 "request-spoof-attempts": 0,
                 "user-agent-spoof-attempts": 0,
                 "distraction-events": 0,
@@ -38688,6 +39694,7 @@
                 "autofill-cancels": 0,
                 "autofill-starts": 0,
                 "devtools-open": false,
+                "debugger-attached": false,
                 "completion-time": 40.172463903,
                 "hesitation-percentage": 96.88310813087575,
                 "behavior-threat-level": "low"
@@ -38697,6 +39704,7 @@
               "reviewer-comment": null,
               "created-at": "2023-03-29T19:06:45.000Z",
               "started-at": "2023-03-30T19:07:01.000Z",
+              "expires-at": "2023-03-31T19:07:01.000Z",
               "completed-at": null,
               "failed-at": null,
               "marked-for-review-at": null,
@@ -38892,6 +39900,7 @@
               "reference-id": "abc-123",
               "note": null,
               "behaviors": {
+                "bot-score": 70,
                 "request-spoof-attempts": 0,
                 "user-agent-spoof-attempts": 0,
                 "distraction-events": 0,
@@ -38903,6 +39912,7 @@
                 "autofill-cancels": 0,
                 "autofill-starts": 0,
                 "devtools-open": false,
+                "debugger-attached": false,
                 "completion-time": 40.172463903,
                 "hesitation-percentage": 96.88310813087575,
                 "behavior-threat-level": "low"
@@ -38912,6 +39922,7 @@
               "reviewer-comment": null,
               "created-at": "2023-03-29T19:06:45.000Z",
               "started-at": "2023-03-30T19:07:01.000Z",
+              "expires-at": "2023-03-31T19:07:01.000Z",
               "completed-at": null,
               "failed-at": null,
               "marked-for-review-at": null,
@@ -39053,6 +40064,7 @@
               "reference-id": "abc-123",
               "note": null,
               "behaviors": {
+                "bot-score": 70,
                 "request-spoof-attempts": 0,
                 "user-agent-spoof-attempts": 0,
                 "distraction-events": 0,
@@ -39064,6 +40076,7 @@
                 "autofill-cancels": 0,
                 "autofill-starts": 0,
                 "devtools-open": false,
+                "debugger-attached": false,
                 "completion-time": 40.172463903,
                 "hesitation-percentage": 96.88310813087575,
                 "behavior-threat-level": "low"
@@ -39073,6 +40086,7 @@
               "reviewer-comment": null,
               "created-at": "2023-03-29T19:06:45.000Z",
               "started-at": "2023-03-30T19:07:01.000Z",
+              "expires-at": "2023-03-31T19:07:01.000Z",
               "completed-at": null,
               "failed-at": null,
               "marked-for-review-at": null,
@@ -41208,7 +42222,8 @@
               "sex": null,
               "restrictions": null,
               "vehicle-class": null,
-              "identification-number": "Y123ABC"
+              "identification-number": "Y123ABC",
+              "from-reusable-persona": false
             },
             "relationships": {
               "inquiry": {
@@ -42796,10 +43811,11 @@
                   "type": "inquiry",
                   "id": "inq_zEx4jL84ShbUyuwX6AzPSqt6",
                   "attributes": {
-                    "status": "pending",
+                    "status": "created",
                     "reference-id": "abc-123",
                     "note": null,
                     "behaviors": {
+                      "bot-score": 70,
                       "request-spoof-attempts": 0,
                       "user-agent-spoof-attempts": 0,
                       "distraction-events": 0,
@@ -42811,6 +43827,7 @@
                       "autofill-cancels": 0,
                       "autofill-starts": 0,
                       "devtools-open": false,
+                      "debugger-attached": false,
                       "completion-time": 40.172463903,
                       "hesitation-percentage": 96.88310813087575,
                       "behavior-threat-level": "low"
@@ -42820,6 +43837,7 @@
                     "reviewer-comment": null,
                     "created-at": "2023-03-29T19:06:45.000Z",
                     "started-at": "2023-03-30T19:07:01.000Z",
+                    "expires-at": "2023-03-31T19:07:01.000Z",
                     "completed-at": null,
                     "failed-at": null,
                     "marked-for-review-at": null,
@@ -43021,10 +44039,11 @@
                   "type": "inquiry",
                   "id": "inq_zEx4jL84ShbUyuwX6AzPSqt6",
                   "attributes": {
-                    "status": "pending",
+                    "status": "expired",
                     "reference-id": "abc-123",
                     "note": null,
                     "behaviors": {
+                      "bot-score": 70,
                       "request-spoof-attempts": 0,
                       "user-agent-spoof-attempts": 0,
                       "distraction-events": 0,
@@ -43036,6 +44055,7 @@
                       "autofill-cancels": 0,
                       "autofill-starts": 0,
                       "devtools-open": false,
+                      "debugger-attached": false,
                       "completion-time": 40.172463903,
                       "hesitation-percentage": 96.88310813087575,
                       "behavior-threat-level": "low"
@@ -43045,6 +44065,7 @@
                     "reviewer-comment": null,
                     "created-at": "2023-03-29T19:06:45.000Z",
                     "started-at": "2023-03-30T19:07:01.000Z",
+                    "expires-at": null,
                     "completed-at": null,
                     "failed-at": null,
                     "marked-for-review-at": null,
@@ -43246,10 +44267,11 @@
                   "type": "inquiry",
                   "id": "inq_zEx4jL84ShbUyuwX6AzPSqt6",
                   "attributes": {
-                    "status": "pending",
+                    "status": "completed",
                     "reference-id": "abc-123",
                     "note": null,
                     "behaviors": {
+                      "bot-score": 70,
                       "request-spoof-attempts": 0,
                       "user-agent-spoof-attempts": 0,
                       "distraction-events": 0,
@@ -43261,6 +44283,7 @@
                       "autofill-cancels": 0,
                       "autofill-starts": 0,
                       "devtools-open": false,
+                      "debugger-attached": false,
                       "completion-time": 40.172463903,
                       "hesitation-percentage": 96.88310813087575,
                       "behavior-threat-level": "low"
@@ -43270,6 +44293,7 @@
                     "reviewer-comment": null,
                     "created-at": "2023-03-29T19:06:45.000Z",
                     "started-at": "2023-03-30T19:07:01.000Z",
+                    "expires-at": null,
                     "completed-at": null,
                     "failed-at": null,
                     "marked-for-review-at": null,
@@ -43471,10 +44495,11 @@
                   "type": "inquiry",
                   "id": "inq_zEx4jL84ShbUyuwX6AzPSqt6",
                   "attributes": {
-                    "status": "pending",
+                    "status": "failed",
                     "reference-id": "abc-123",
                     "note": null,
                     "behaviors": {
+                      "bot-score": 70,
                       "request-spoof-attempts": 0,
                       "user-agent-spoof-attempts": 0,
                       "distraction-events": 0,
@@ -43486,6 +44511,7 @@
                       "autofill-cancels": 0,
                       "autofill-starts": 0,
                       "devtools-open": false,
+                      "debugger-attached": false,
                       "completion-time": 40.172463903,
                       "hesitation-percentage": 96.88310813087575,
                       "behavior-threat-level": "low"
@@ -43495,6 +44521,7 @@
                     "reviewer-comment": null,
                     "created-at": "2023-03-29T19:06:45.000Z",
                     "started-at": "2023-03-30T19:07:01.000Z",
+                    "expires-at": null,
                     "completed-at": null,
                     "failed-at": null,
                     "marked-for-review-at": null,
@@ -43696,10 +44723,11 @@
                   "type": "inquiry",
                   "id": "inq_zEx4jL84ShbUyuwX6AzPSqt6",
                   "attributes": {
-                    "status": "pending",
+                    "status": "needs_review",
                     "reference-id": "abc-123",
                     "note": null,
                     "behaviors": {
+                      "bot-score": 70,
                       "request-spoof-attempts": 0,
                       "user-agent-spoof-attempts": 0,
                       "distraction-events": 0,
@@ -43711,6 +44739,7 @@
                       "autofill-cancels": 0,
                       "autofill-starts": 0,
                       "devtools-open": false,
+                      "debugger-attached": false,
                       "completion-time": 40.172463903,
                       "hesitation-percentage": 96.88310813087575,
                       "behavior-threat-level": "low"
@@ -43720,6 +44749,7 @@
                     "reviewer-comment": null,
                     "created-at": "2023-03-29T19:06:45.000Z",
                     "started-at": "2023-03-30T19:07:01.000Z",
+                    "expires-at": null,
                     "completed-at": null,
                     "failed-at": null,
                     "marked-for-review-at": null,
@@ -43921,10 +44951,11 @@
                   "type": "inquiry",
                   "id": "inq_zEx4jL84ShbUyuwX6AzPSqt6",
                   "attributes": {
-                    "status": "pending",
+                    "status": "approved",
                     "reference-id": "abc-123",
                     "note": null,
                     "behaviors": {
+                      "bot-score": 70,
                       "request-spoof-attempts": 0,
                       "user-agent-spoof-attempts": 0,
                       "distraction-events": 0,
@@ -43936,6 +44967,7 @@
                       "autofill-cancels": 0,
                       "autofill-starts": 0,
                       "devtools-open": false,
+                      "debugger-attached": false,
                       "completion-time": 40.172463903,
                       "hesitation-percentage": 96.88310813087575,
                       "behavior-threat-level": "low"
@@ -43945,6 +44977,7 @@
                     "reviewer-comment": null,
                     "created-at": "2023-03-29T19:06:45.000Z",
                     "started-at": "2023-03-30T19:07:01.000Z",
+                    "expires-at": null,
                     "completed-at": null,
                     "failed-at": null,
                     "marked-for-review-at": null,
@@ -44146,10 +45179,11 @@
                   "type": "inquiry",
                   "id": "inq_zEx4jL84ShbUyuwX6AzPSqt6",
                   "attributes": {
-                    "status": "pending",
+                    "status": "declined",
                     "reference-id": "abc-123",
                     "note": null,
                     "behaviors": {
+                      "bot-score": 70,
                       "request-spoof-attempts": 0,
                       "user-agent-spoof-attempts": 0,
                       "distraction-events": 0,
@@ -44161,6 +45195,7 @@
                       "autofill-cancels": 0,
                       "autofill-starts": 0,
                       "devtools-open": false,
+                      "debugger-attached": false,
                       "completion-time": 40.172463903,
                       "hesitation-percentage": 96.88310813087575,
                       "behavior-threat-level": "low"
@@ -44170,6 +45205,7 @@
                     "reviewer-comment": null,
                     "created-at": "2023-03-29T19:06:45.000Z",
                     "started-at": "2023-03-30T19:07:01.000Z",
+                    "expires-at": null,
                     "completed-at": null,
                     "failed-at": null,
                     "marked-for-review-at": null,
@@ -44375,6 +45411,7 @@
                     "reference-id": "abc-123",
                     "note": null,
                     "behaviors": {
+                      "bot-score": 70,
                       "request-spoof-attempts": 0,
                       "user-agent-spoof-attempts": 0,
                       "distraction-events": 0,
@@ -44386,6 +45423,7 @@
                       "autofill-cancels": 0,
                       "autofill-starts": 0,
                       "devtools-open": false,
+                      "debugger-attached": false,
                       "completion-time": 40.172463903,
                       "hesitation-percentage": 96.88310813087575,
                       "behavior-threat-level": "low"
@@ -44395,6 +45433,7 @@
                     "reviewer-comment": null,
                     "created-at": "2023-03-29T19:06:45.000Z",
                     "started-at": "2023-03-30T19:07:01.000Z",
+                    "expires-at": "2023-03-31T19:07:01.000Z",
                     "completed-at": null,
                     "failed-at": null,
                     "marked-for-review-at": null,

@@ -9,6 +9,7 @@ post:
     - $ref: ../components/parameters/idempotency-key-header.yaml
     - $ref: ../components/parameters/persona-version-header.yaml
     - $ref: ../components/parameters/include-query-parameter.yaml
+    - $ref: ../components/parameters/fields-query-parameter.yaml
     - name: inquiry-id
       in: path
       required: true
@@ -29,6 +30,7 @@ post:
               data:
                 $ref: ../components/schemas/inquiry.yaml
               included:
+                x-remove-from-readme: true
                 description: >-
                   Objects that _may_ be returned if specified via the `include`
                   query parameter in the request.

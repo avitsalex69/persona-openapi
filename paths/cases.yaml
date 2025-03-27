@@ -16,6 +16,7 @@ get:
     - $ref: ../components/parameters/idempotency-key-header.yaml
     - $ref: ../components/parameters/persona-version-header.yaml
     - $ref: ../components/parameters/pagination-query-params.yaml
+    - $ref: ../components/parameters/fields-query-parameter.yaml
     - in: query
       name: filter
       style: deepObject
@@ -169,6 +170,7 @@ post:
     - $ref: ../components/parameters/idempotency-key-header.yaml
     - $ref: ../components/parameters/persona-version-header.yaml
     - $ref: ../components/parameters/include-query-parameter.yaml
+    - $ref: ../components/parameters/fields-query-parameter.yaml
   requestBody:
     content:
       application/json:
@@ -286,6 +288,7 @@ post:
                       reference-id: null
                       note: null
                       behaviors:
+                        bot-score: null
                         request-spoof-attempts: null
                         user-agent-spoof-attempts: null
                         distraction-events: null
@@ -297,6 +300,7 @@ post:
                         autofill-cancels: null
                         autofill-starts: null
                         devtools-open: null
+                        debugger-attached: null
                         completion-time: null
                         hesitation-percentage: null
                         behavior-threat-level: null
@@ -305,6 +309,7 @@ post:
                       reviewer-comment: null
                       created-at: '2023-03-29T19:06:45.000Z'
                       started-at: '2023-03-30T19:07:01.000Z'
+                      expires-at: null
                       completed-at: null
                       failed-at: null
                       marked-for-review-at: null
